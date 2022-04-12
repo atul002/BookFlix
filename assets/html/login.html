@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/b1691b91fb.css" media="all" rel="stylesheet">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>BookFlix - Login</title>
+</head>
+<body>
+  <div class="logo">
+    <a href="../../index.html">
+      <img src="../images/BookFlix-Logo.svg" alt="BookFlix-Logo">
+    </a>
+  </div>
+
+  <div class="login-container">
+
+    <div class="login-image-wrapper">
+      <img class="login-image" src="../images/login-image.png" classs="login-image" alt="Login-Image">
+    </div>
+    
+    <div class="form-wrapper">
+
+      <h2 class="login-heading">Welcome Back!</h2>
+      
+      <form class="login-form" action="#" method="post">
+
+        <label for="email">Email:
+          <div class="input-email">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="email" placeholder="user@domain.com" name="email" id="email" required>
+          </div>  
+        </label>
+
+        <label for="password">Password:
+          <div class="input-password">
+            <i class="fa fa-key" aria-hidden="true"></i>  
+            <input type="password" placeholder="********"name="password" id="password" required>
+          </div>
+        </label>
+
+        <input class="login-btn" type="submit" value="Login">
+      </form>
+
+      <a class="reg-btn" href="#">New User? Register</a>
+      <a class="home-btn" href="/index.html">Go back to Home!</a>
+    </div>
+  </div>
+
+</body>
+</html>

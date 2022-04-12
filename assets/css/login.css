@@ -1,0 +1,81 @@
+/*Importing fonts*/
+/*Defining Fonts*/
+/*font-family: 'Jost', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap");
+/*Importing Basic style*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+/*Importing colors*/
+/*Defining Basic Color Schema*/
+body {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 3rem;
+  padding: 1rem;
+}
+body .logo a img {
+  max-width: 150px;
+}
+body .login-container {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+body .login-container .login-image-wrapper, body .login-container .form-wrapper {
+  margin: 1rem;
+  width: 50%;
+}
+body .login-container .login-image-wrapper .login-image, body .login-container .form-wrapper .login-image {
+  max-width: 100%;
+}
+body .login-container .form-wrapper .login-form {
+  padding: 2rem 0;
+}
+body .login-container .form-wrapper .login-form label {
+  display: block;
+}
+body .login-container .form-wrapper .login-form label .input-email, body .login-container .form-wrapper .login-form label .input-password {
+  border-bottom: 1px solid #323643;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+body .login-container .form-wrapper .login-form label .input-email input[type=email], body .login-container .form-wrapper .login-form label .input-password input[type=email] {
+  padding-left: 0.5rem;
+  border: none;
+  outline: none;
+}
+body .login-container .form-wrapper .login-form label .input-password input[type=password] {
+  padding-left: 0.5rem;
+  border: none;
+  outline: none;
+}
+body .login-container .form-wrapper .login-form .login-btn {
+  background-color: #606470;
+  border: none;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1.5rem;
+}
+body .login-container .form-wrapper .login-form .login-btn:hover {
+  background-color: #323643;
+}
+body .login-container .form-wrapper a {
+  background-color: #525ca1;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+body .login-container .form-wrapper a:hover {
+  background-color: #323643;
+}
+
+/*# sourceMappingURL=login.css.map */

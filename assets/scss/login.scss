@@ -1,0 +1,104 @@
+/*Importing fonts*/
+@import 'fonts';
+
+/*Importing Basic style*/
+@import 'basic';
+
+/*Importing colors*/
+@import 'colors';
+
+
+body {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+  .logo {
+    .logo-link {
+      .logo-image {
+        max-width: 150px;
+      }
+    }
+  }
+
+  .login-container {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin: 1rem auto;
+
+    .login-image-wrapper {
+      margin: 1rem;
+      width: 50%;
+       
+      .login-image {
+        max-width: 100%;
+      }
+    }
+
+    .form-wrapper {
+      @extend .login-image-wrapper;
+
+      .login-form {
+        padding: 2rem 0;
+        label {
+          display: block;
+
+          .input-email {
+            border-bottom: 1px solid $border_color1;
+            max-width: 300px;
+            margin-bottom: 1rem;
+
+
+            input[type="email"] {
+              padding-left: .5rem;
+              border: none;
+              outline: none;
+            }
+          }
+          
+          .input-password {
+            @extend .input-email;
+
+            input[type="password"] {
+              padding-left: .5rem;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+        .login-btn {
+          background-color: $bg_color2;
+          border: none;
+          border-radius: .25rem;
+          color: $text_color5;
+          font-size: 1.25rem;
+          margin: 2rem 0;
+          padding: .5rem 1.5rem;
+          
+        }
+
+        .login-btn:hover {
+          background-color: $bg_color1;
+        }
+      }
+
+      a {
+        background-color: $bg_color6;
+        color: $text_color5;
+        display: inline-block;
+        margin-right: 1rem;
+        padding: .5rem 1rem;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: $bg_color1;
+      }
+    }
+
+  } 
+
+
+  
+
+
+}

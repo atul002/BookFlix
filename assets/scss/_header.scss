@@ -1,0 +1,91 @@
+/*Importing Basic Style*/
+@import '_basic';
+
+/*Importing Colors*/
+@import '_colors';
+
+
+body {
+  font-family: 'Jost', sans-serif;
+
+  .header {
+    align-items: center;
+    background-color: $navy-blue-opacity;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    
+    .logo {
+      .logo-link {
+        display: block;
+        .logo-image {
+          vertical-align: bottom;
+        }
+      }
+    }
+  
+    .navigation {
+      .nav-links {
+        display: flex;
+        margin-right: 2rem;
+
+        .link {
+          list-style: none;
+          text-align: center;
+
+          .link-anchor {
+            color: $pure-white;
+            display: inline-block;
+            font-size: 1.25rem;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+
+          }
+        }
+
+        .active {
+          .link-anchor {
+            color: $light-blue;
+          }
+        }
+
+        .link:hover .link-anchor {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    .header {
+      background-color: $navy-blue;
+      position: static;
+      .logo {
+        .logo-link {
+          .logo-image {
+            max-width: 200px;
+          }
+        }
+      }
+
+      .navigation {
+        .nav-links {
+          margin: 0;
+
+          .link {
+            .link-anchor {
+              font-size: 1rem;
+              padding: .5rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
